@@ -9,12 +9,17 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
+    "test": "vitest run --passWithNoTests",
+    "test:dev": "vitest --watch",
+    "test:coverage": "vitest run --coverage --passWithNoTests",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky"
   },
   "dependencies": {
+    "@vitest/coverage-v8": "^1.6.0",
     "pinia": "^2.1.7",
+    "prettier": "^3.3.3",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
