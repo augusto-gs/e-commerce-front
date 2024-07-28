@@ -1,0 +1,5 @@
+
+{
+  "*.{ts, js,css,json,md, vue}": "prettier --write",
+	"*.{ts, vue}": "npx eslint"
+}
